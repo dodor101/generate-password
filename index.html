@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate password</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <script src="./assets/JS/script.js"></script>
+  </head>
+
+  <body>
+    <section class="section-body">
+      <header>
+        <h1>Generate Password</h1>
+      </header>
+      <textarea readonly id="display-password" placeholder="Password Created"></textarea>
+
+      <form>
+        <label for="special">Special: <input class="special" name="special" type="checkbox" /></label>
+        <label for="uppercase">Uppercase: <input class="uppercase" name="uppercase" type="checkbox" /></label>
+        <label for="lowercase">Lowercase: <input class="lowercase" name="lowercase" type="checkbox" /></label>
+        <label for="length">length: <input class="length" name="length" type="range" /><input type="number" /></label>
+        <input class="submit-btn" type="submit" value="Generate Password" />
+      </form>
+      
+    </section>
+  </body>
+</html>
