@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generate password</title>
     <link rel="stylesheet" href="./assets/CSS/style.css" />
-    <script src="./assets/JS/script.js"></script>
+    <script defer src="./assets/JS/script.js"></script>
   </head>
 
   <body>
@@ -15,14 +15,15 @@
       </header>
       <textarea readonly id="display-password" placeholder="Password Created"></textarea>
 
-      <form>
-        <label for="special">Special: <input class="special" name="special" type="checkbox" /></label>
-        <label for="uppercase">Uppercase: <input class="uppercase" name="uppercase" type="checkbox" /></label>
-        <label for="lowercase">Lowercase: <input class="lowercase" name="lowercase" type="checkbox" /></label>
-        <label for="length">length: <input class="length" name="length" type="range" /><input type="number" /></label>
+      <form class='form'>
+        <label for="special">Special: <input id="special" name="special" type="checkbox" /></label>
+        <label for="uppercase">Uppercase: <input id="uppercase" name="uppercase" type="checkbox"  /></label>
+        <!-- <label for="lowercase">Lowercase: <input id="lowercase" name="lowercase" type="checkbox" /></label> -->
+        <label for="number">Number: <input id="number" name="number" type="checkbox" /></label>
+        <label for="length">Length: <input id="length" name="length" type="range" min='1' max='60' value='10' /><input class='number-input' type="number" value='10' /></label>
         <input class="submit-btn" type="submit" value="Generate Password" />
       </form>
-      
+
     </section>
   </body>
 </html>
